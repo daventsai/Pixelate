@@ -14,3 +14,18 @@ makeRow();
 
 let addRow = document.getElementById("add-row");
 addRow.addEventListener("click", makeRow);
+
+
+
+table.addEventListener('click',colorize);
+function colorize (event){
+  const target = event.target;
+  if (target.className === '')
+  {
+    target.className = 'red';
+  }
+  else{
+    target.className = '';
+  }
+  
+}
